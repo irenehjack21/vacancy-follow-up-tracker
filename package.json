@@ -1,0 +1,21 @@
+{
+  "name": "vacancy-follow-up-tracker",
+  "version": "1.0.0",
+  "description": "A local-first tool that turns a weekly ATS export into a deduplicated, trackable follow-up list for stale unapproved vacancies.",
+  "license": "MIT",
+  "scripts": {
+    "build:js": "esbuild src/entry.jsx --bundle --minify --format=iife --jsx=automatic --outfile=dist/app.js",
+    "build:css": "tailwindcss -i input.css -o dist/app.css --minify",
+    "build": "npm run build:js && npm run build:css && node assemble.js"
+  },
+  "dependencies": {
+    "lucide-react": "^0.383.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.0",
+    "tailwindcss": "^3.4.17"
+  }
+}
