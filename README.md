@@ -4,7 +4,7 @@ A local-first tool that turns a weekly ATS export into a clean, deduplicated lis
 
 It runs as a single HTML file. No install, no server, no accounts, no internet. All data stays in the browser on the machine it's opened on.
 
-> _Add a screenshot here once you've opened the tool: drop an image in the repo and reference it, e.g._ `![Screenshot](screenshot.png)`
+
 
 ## The problem
 
